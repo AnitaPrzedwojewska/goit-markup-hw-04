@@ -1,0 +1,295 @@
+:root {
+	--PRIMARY-BRAND: #4d5ae5;
+	--PRESSED-STATE: #404bbf;
+	--DARK: #2e2f42;
+    --SUCCESS: #31d0aa;
+	--TEXT: #434455;
+	--LATE-TEXT: #8e8f99;
+	--ACCENT: #e7e9fc;
+	--LIGHT: #f4f4fd;
+    --WHITE: #fff;
+    --MODAL-OVERLAY: rgba(46, 47, 66, 0.70); /* 40% #2e2f42*/
+    --SHADOW-LESS: rgba(46, 47, 66, 0.08);
+    --SHADOW-MORE: rgba(46, 47, 66, 0.16);
+
+    --GAP-BASIC: 24px;
+    --GAP-HEADER: 40px;
+    --WIDTH-THREE: calc((100% - 2*var(--GAP-BASIC)) / 3);
+    --WIDTH-FOUR: calc((100% - 3*var(--GAP-BASIC)) / 4);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {    
+	font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 2%;
+	color: var(--TEXT);
+    background-color: var(--WHITE);
+}
+img {
+    display: block;
+}
+/* ---------------------------- COMMON */
+.container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.section {
+    padding: 120px 0;
+}
+.section-title {
+    margin-bottom: 72px;
+    text-align: center; 
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--DARK);
+}
+.list {
+    list-style-type: none;
+    display: flex;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.link {
+    text-decoration: none;
+}
+.item:hover,
+.item:focus,
+.item:active {
+    color: var(--PRESSED-STATE);
+}
+.item-title {
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--DARK);
+}
+.item-txt {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--TEXT);
+}
+.btn {
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    border-radius: 4px; 
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* ---------------------------- HEADER */
+.header-top {
+    border-bottom: 1px solid var(--ACCENT);
+}
+.container-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+.list-header {
+    gap: var(--GAP-HEADER); 
+}
+.logo {
+    color: var(--PRIMARY-BRAND);
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.17;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.logo-header {
+    display: block;
+    margin-right: 76px;
+}
+.studio-dark {
+    color: var(--DARK);
+}
+.menu .item {
+    display: block;
+    padding: 24px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.item-menu {
+    font-weight: 500;
+    color: var(--DARK);
+}
+.item-address {
+    font-style: normal;
+    font-weight: 400;
+    color: var(--TEXT);
+}
+/* ---------------------------- MOTTO */
+.section.motto {
+    padding: 188px 0;
+    background-color: var(--DARK);
+    background-image: linear-gradient(var(--MODAL-OVERLAY), var(--MODAL-OVERLAY)), 
+        url('../images/bg-motto.jpg');
+    background-repeat: no-repeat;
+    background-position: center, center;
+    background-size: scale-down;
+    text-align: center;
+}
+.motto-title {
+    max-width: 496px;
+    margin-right: auto;
+    margin-bottom: 48px;
+    margin-left: auto;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 1.12px;
+    color: var(--WHITE);
+}
+.btn.order {
+    min-width: 169px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 32px;
+    color: var(--WHITE);
+    background-color: var(--PRIMARY-BRAND);
+    border: none;
+    cursor: pointer;
+}
+.btn.order:hover,
+.btn.order:focus,
+.btn.order:active {
+    color: var(--WHITE);
+    background-color: var(--PRESSED-STATE);
+}
+/* ---------------------------- OUR PHILOSOPHY */
+.list-our-philosophy {
+    gap: var(--GAP-BASIC);
+}
+.item-our-philosophy {
+    width: var(--WIDTH-FOUR);
+}
+/* ---------------------------- WE DO */
+.section.we-do {
+    padding-top: 0;
+}
+.list-we-do {
+    gap: var(--GAP-BASIC);
+}
+.img-border {
+    border: 1px solid var(--ACCENT);
+}
+.item-we-do {
+    width: var(--WIDTH-THREE);
+}
+/* ---------------------------- OUR TEAM */
+.section.our-team {
+    background-color: var(--LIGHT);
+}
+.list-our-team {
+    gap: var(--GAP-BASIC);
+}
+.item-our-team {
+    background-color: var(--WHITE);
+    border-radius: 0px 0px 4px 4px;
+    width: var(--WIDTH-FOUR);
+    box-shadow: 0px 2px 1px 0px var(--SHADOW-LESS), 
+            0px 1px 1px 0px var(--SHADOW-MORE), 
+            0px 1px 6px 0px var(--SHADOW-MORE);
+}
+.caption-our-team {
+    padding: 32px 0;
+    text-align: center;
+}
+/* ---------------------------- PORTFOLIO */
+.section.portfolio {
+    padding: 96px 0 120px 0;
+}
+.list-filters {
+    gap: var(--GAP-BASIC);
+    justify-content: center;
+    margin-bottom: 72px;
+}
+.btn.filters {
+    padding: 12px 24px;
+    color: var(--PRIMARY-BRAND);
+    background-color: var(--LIGHT);
+    border: 1px solid var(--ACCENT);
+    cursor: pointer;
+}
+.btn.filters:hover,
+.btn.filters:focus,
+.btn.filters:active {
+    color: var(--WHITE);
+    background-color: var(--PRESSED-STATE);
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 
+            0px 1px 1px 0px rgba(46, 47, 66, 0.16), 
+            0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.list-portfolio {
+    column-gap: var(--GAP-BASIC);
+    row-gap: calc(2*var(--GAP-BASIC));
+}
+.item-portfolio {
+    width: var(--WIDTH-THREE);
+}
+.item-portfolio:hover,
+.item-portfolio:focus,
+.item-portfolio:active
+ {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 
+            0px 1px 1px 0px rgba(46, 47, 66, 0.16), 
+            0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.caption-portfolio {
+    padding: 32px 16px;
+    border: 1px solid var(--ACCENT);
+    border-top: 0;
+}
+/* ---------------------------- FOOTER */
+.footer {
+    background-color: var(--DARK);
+    padding: 100px 0;
+}
+.logo-footer {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+.studio-light {
+    color: var(--LIGHT);
+}
+.footer-txt {
+    color: var(--LIGHT);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+}
