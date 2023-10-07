@@ -213,8 +213,9 @@ img {
     background-color: var(--LIGHT);
 }
 .svg-our-advantages {
-    width: 64;
-    height: 64;
+    width: 64px;
+    height: 64px;
+    fill: var(--LIGHT);
 }
 /* ---------------------------- WE DO */
 .section.we-do {
@@ -276,8 +277,9 @@ img {
     background-color: var(--PRESSED-STATE);
 }
 .svg-our-team {
-    width: 16;
-    height: 16;
+    width: 16px;
+    height: 16px;
+    fill: var(--ACCENT);
 }
 /* ---------------------------- CUSTOMERS */
 .section.customers {
@@ -302,15 +304,15 @@ img {
     border: 1px solid var(--LATE-TEXT);
     border-radius: 4px;
 }
+.link-customers:hover,
 .link-customers:focus,
-.link-customers:hover
- {
+.link-customers:active {
     color: var(--PRESSED-STATE);
     border: 1px solid var(--PRESSED-STATE);
 }
 .svg-customers {
-    width: 104;
-    height: 56;
+    width: 104px;
+    height: 56px;
     fill: currentColor;
 }
 /* ---------------------------- PORTFOLIO */
@@ -335,9 +337,9 @@ img {
     color: var(--WHITE);
     background-color: var(--PRESSED-STATE);
     border: 1px solid transparent;
-    box-shadow: 0px 2px 1px 0px var(--SHADOW-LESS), 
-            0px 1px 1px 0px var(--SHADOW-MORE), 
-            0px 1px 6px 0px var(--SHADOW-LESS);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+            0px 2px 1px rgba(0, 0, 0, 0.08), 
+            0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .list-portfolio {
     column-gap: var(--GAP-BASIC);
@@ -346,9 +348,12 @@ img {
 .item-portfolio {
     width: var(--WIDTH-THREE);
 }
-.item-portfolio:hover,
-.item-portfolio:focus,
-.item-portfolio:active
+.link-portfolio {
+    display: block;
+}
+.link-portfolio:hover,
+.link-portfolio:focus,
+.link-portfolio:active
  {
     box-shadow: 0px 2px 1px 0px var(--SHADOW-LESS), 
             0px 1px 1px 0px var(--SHADOW-MORE), 
@@ -368,7 +373,10 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    gap: 120px;
+    align-items: baseline;
+}
+.footer-info {
+    margin-right: 120px;
 }
 .logo-footer {
     display: inline-block;
@@ -389,7 +397,7 @@ img {
 }
 .footer-txt-sm {
     margin-bottom: 16px;
-    color: var(--LIGHT);
+    color: var(--WHITE);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -399,7 +407,7 @@ img {
     display: flex;
     justify-content: row;
     align-items: flex-start;
-    gap: var(--GAP-BASIC);
+    gap: 16px;
 }
 .item-sm-footer {
     display: flex;
@@ -420,6 +428,7 @@ img {
     background-color: var(--SUCCESS);
 }
 .svg-footer {
-    width: 24;
-    height: 24;
+    width: 24px;
+    height: 24px;
+    fill: var(--LIGHT);
 }
