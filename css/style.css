@@ -279,7 +279,7 @@ img {
 .svg-our-team {
     width: 16px;
     height: 16px;
-    fill: var(--ACCENT);
+    fill: var(--LIGHT);
 }
 /* ---------------------------- CUSTOMERS */
 .section.customers {
