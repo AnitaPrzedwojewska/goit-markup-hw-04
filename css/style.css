@@ -106,6 +106,9 @@ img {
 /* ---------------------------- HEADER */
 .header-top {
     border-bottom: 1px solid var(--ACCENT);
+    box-shadow: 0px 1px 6px 0px var(--SHADOW-LESS), 
+        0px 1px 1px 0px var(--SHADOW-MORE), 
+        0px 2px 1px 0px var(--SHADOW-LESS);
 }
 .container-header {
     display: flex;
@@ -154,13 +157,15 @@ img {
 }
 /* ---------------------------- MOTTO */
 .section.motto {
+    max-width: 1440px;
+    margin: 0 auto;
     padding: 188px 0;
     background-color: var(--DARK);
     background-image: linear-gradient(var(--MODAL-OVERLAY), var(--MODAL-OVERLAY)), 
         url('../images/bg-motto.jpg');
     background-repeat: no-repeat;
     background-position: center, center;
-    background-size: scale-down;
+    background-size: cover;
     text-align: center;
 }
 .motto-title {
@@ -198,15 +203,18 @@ img {
     width: var(--WIDTH-FOUR);
 }
 .icon-our-advantages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
     margin-bottom: 8px;
     padding: 24px 100px;
     border-radius: 4px;
     background-color: var(--LIGHT);
-
 }
 .svg-our-advantages {
-    width: 64px;
-    height: 64px;
+    width: 64;
+    height: 64;
 }
 /* ---------------------------- WE DO */
 .section.we-do {
@@ -249,45 +257,61 @@ img {
     align-items: center;
     gap: var(--GAP-BASIC);
 }
+.item-sm-our-team {
+    display: flex;
+    width: 40px;
+    height: 40px;
+}
 .sm-our-team {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     padding: 12px;
     background-color: var(--PRIMARY-BRAND);
     border-radius: 50%;
 }
+.sm-our-team:hover,
+.sm-our-team:focus {
+    background-color: var(--PRESSED-STATE);
+}
 .svg-our-team {
-    width: 12px;
-    height: 12px;
+    width: 16;
+    height: 16;
 }
 /* ---------------------------- CUSTOMERS */
 .section.customers {
-    padding: 96px 0 120px 0;
+    padding: 120px 0 120px 0;
 }
 .list-customers {
     gap: var(--GAP-BASIC);
 }
 .item-customers {
     display: flex;
+    height: 88px;
     width: var(--WIDTH-SIX);
 }
 .link-customers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     padding: 16px 32px;
+    color: var(--LATE-TEXT);
     border: 1px solid var(--LATE-TEXT);
     border-radius: 4px;
 }
 .link-customers:focus,
 .link-customers:hover
  {
+    color: var(--PRESSED-STATE);
     border: 1px solid var(--PRESSED-STATE);
 }
 .svg-customers {
-    width: 104px;
-    height: 56px;
-    --icon-color: var(--LATE-TEXT);
-}
-.link-customers:focus .svg-customers,
-.link-customers:hover .svg-customers {
-    --icon-color: var(--PRESSED-STATE);
+    width: 104;
+    height: 56;
+    fill: currentColor;
 }
 /* ---------------------------- PORTFOLIO */
 .section.portfolio {
@@ -365,6 +389,11 @@ img {
 }
 .footer-txt-sm {
     margin-bottom: 16px;
+    color: var(--LIGHT);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
 }
 .icons-footer {
     display: flex;
@@ -372,9 +401,17 @@ img {
     align-items: flex-start;
     gap: var(--GAP-BASIC);
 }
+.item-sm-footer {
+    display: flex;
+    width: 40px;
+    height: 40px;
+}
 .sm-footer {
     display: flex;
-    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     background-color: var(--PRIMARY-BRAND);
     border-radius: 50%;
 }
@@ -383,6 +420,6 @@ img {
     background-color: var(--SUCCESS);
 }
 .svg-footer {
-    width: 24px;
-    height: 24px;
+    width: 24;
+    height: 24;
 }
