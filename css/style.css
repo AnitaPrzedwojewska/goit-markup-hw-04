@@ -304,10 +304,9 @@ img {
     border-radius: 4px;
 }
 .link-customers:hover,
-.link-customers:focus,
-.link-customers:active {
-    color: var(--PRESSED-STATE);
-    border-color: var(--PRESSED-STATE);
+.link-customers:focus {
+    color: #404bbf;
+    border-color: #404bbf;
 }
 .svg-customers {
     width: 104px;
@@ -423,7 +422,7 @@ img {
 .link-sm-footer:hover,
 .link-sm-footer:focus,
 .link-sm-footer:active {
-    background-color: var(--SUCCESS);
+    background-color: #31d0aa;
 }
 .svg-sm-footer {
     width: 24px;
