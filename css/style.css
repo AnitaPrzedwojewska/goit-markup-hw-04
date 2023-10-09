@@ -213,8 +213,8 @@ img {
     background-color: var(--LIGHT);
 }
 .svg-our-advantages {
-    width: 64px;
-    height: 64px;
+    width: 64;
+    height: 64;
     fill: var(--LIGHT);
 }
 /* ---------------------------- WE DO */
@@ -277,8 +277,8 @@ img {
     background-color: var(--PRESSED-STATE);
 }
 .svg-our-team {
-    width: 16px;
-    height: 16px;
+    width: 16;
+    height: 16;
     fill: var(--LIGHT);
 }
 /* ---------------------------- CUSTOMERS */
@@ -309,8 +309,8 @@ img {
     border-color: var(--PRESSED-STATE);
 }
 .svg-customers {
-    width: 104px;
-    height: 56px;
+    width: 104;
+    height: 56;
     fill: currentColor;
 }
 /* ---------------------------- PORTFOLIO */
@@ -424,7 +424,7 @@ img {
     background-color: var(--SUCCESS);
 }
 .svg-sm-footer {
-    width: 24px;
-    height: 24px;
+    width: 24;
+    height: 24;
     fill: var(--LIGHT);
 }
